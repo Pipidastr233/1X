@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8415F370285B03F300BB1B5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415F36F285B03F300BB1B5F /* AppDelegate.swift */; };
+		8415F375285B03F300BB1B5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8415F373285B03F300BB1B5F /* Main.storyboard */; };
+		8415F377285B03F600BB1B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8415F376285B03F600BB1B5F /* Assets.xcassets */; };
+		8415F37A285B03F600BB1B5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8415F378285B03F600BB1B5F /* LaunchScreen.storyboard */; };
+		8415F389285B07DE00BB1B5F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415F388285B07DE00BB1B5F /* LoginView.swift */; };
+		8415F38C285B080800BB1B5F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8415F38B285B080800BB1B5F /* Alamofire */; };
+		8415F38F285B081900BB1B5F /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 8415F38E285B081900BB1B5F /* SwiftyJSON */; };
+		8415F392285B08C300BB1B5F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8415F391285B08C300BB1B5F /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8415F36C285B03F300BB1B5F /* smartHouseTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartHouseTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8415F36F285B03F300BB1B5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8415F374285B03F300BB1B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8415F376285B03F600BB1B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8415F379285B03F600BB1B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8415F388285B07DE00BB1B5F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8415F391285B08C300BB1B5F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8415F369285B03F300BB1B5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8415F38F285B081900BB1B5F /* SwiftyJSON in Frameworks */,
+				8415F38C285B080800BB1B5F /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8415F363285B03F300BB1B5F = {
+			isa = PBXGroup;
+			children = (
+				8415F36E285B03F300BB1B5F /* smartHouseTV */,
+				8415F36D285B03F300BB1B5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8415F36D285B03F300BB1B5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8415F36C285B03F300BB1B5F /* smartHouseTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8415F36E285B03F300BB1B5F /* smartHouseTV */ = {
+			isa = PBXGroup;
+			children = (
+				8415F386285B07BC00BB1B5F /* views */,
+				8415F385285B07AA00BB1B5F /* models */,
+				8415F384285B079C00BB1B5F /* controllers */,
+				8415F380285B046700BB1B5F /* common */,
+			);
+			path = smartHouseTV;
+			sourceTree = "<group>";
+		};
+		8415F380285B046700BB1B5F /* common */ = {
+			isa = PBXGroup;
+			children = (
+				8415F36F285B03F300BB1B5F /* AppDelegate.swift */,
+				8415F373285B03F300BB1B5F /* Main.storyboard */,
+				8415F376285B03F600BB1B5F /* Assets.xcassets */,
+				8415F378285B03F600BB1B5F /* LaunchScreen.storyboard */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		8415F384285B079C00BB1B5F /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8415F390285B08B700BB1B5F /* LoginController */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		8415F385285B07AA00BB1B5F /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		8415F386285B07BC00BB1B5F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				8415F387285B07CF00BB1B5F /* LoginView */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		8415F387285B07CF00BB1B5F /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				8415F388285B07DE00BB1B5F /* LoginView.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		8415F390285B08B700BB1B5F /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				8415F391285B08C300BB1B5F /* LoginViewController.swift */,
+			);
+			path = LoginController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8415F36B285B03F300BB1B5F /* smartHouseTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8415F37D285B03F600BB1B5F /* Build configuration list for PBXNativeTarget "smartHouseTV" */;
+			buildPhases = (
+				8415F368285B03F300BB1B5F /* Sources */,
+				8415F369285B03F300BB1B5F /* Frameworks */,
+				8415F36A285B03F300BB1B5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smartHouseTV;
+			packageProductDependencies = (
+				8415F38B285B080800BB1B5F /* Alamofire */,
+				8415F38E285B081900BB1B5F /* SwiftyJSON */,
+			);
+			productName = smartHouseTV;
+			productReference = 8415F36C285B03F300BB1B5F /* smartHouseTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8415F364285B03F300BB1B5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					8415F36B285B03F300BB1B5F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 8415F367285B03F300BB1B5F /* Build configuration list for PBXProject "smartHouseTV" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8415F363285B03F300BB1B5F;
+			packageReferences = (
+				8415F38A285B080800BB1B5F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8415F38D285B081900BB1B5F /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = 8415F36D285B03F300BB1B5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8415F36B285B03F300BB1B5F /* smartHouseTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8415F36A285B03F300BB1B5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8415F37A285B03F600BB1B5F /* LaunchScreen.storyboard in Resources */,
+				8415F377285B03F600BB1B5F /* Assets.xcassets in Resources */,
+				8415F375285B03F300BB1B5F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8415F368285B03F300BB1B5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8415F392285B08C300BB1B5F /* LoginViewController.swift in Sources */,
+				8415F389285B07DE00BB1B5F /* LoginView.swift in Sources */,
+				8415F370285B03F300BB1B5F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8415F373285B03F300BB1B5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8415F374285B03F300BB1B5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8415F378285B03F600BB1B5F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8415F379285B03F600BB1B5F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8415F37B285B03F600BB1B5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+			};
+			name = Debug;
+		};
+		8415F37C285B03F600BB1B5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8415F37E285B03F600BB1B5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kp11.smartHouseTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.4;
+			};
+			name = Debug;
+		};
+		8415F37F285B03F600BB1B5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kp11.smartHouseTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8415F367285B03F300BB1B5F /* Build configuration list for PBXProject "smartHouseTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8415F37B285B03F600BB1B5F /* Debug */,
+				8415F37C285B03F600BB1B5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8415F37D285B03F600BB1B5F /* Build configuration list for PBXNativeTarget "smartHouseTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8415F37E285B03F600BB1B5F /* Debug */,
+				8415F37F285B03F600BB1B5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8415F38A285B080800BB1B5F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8415F38D285B081900BB1B5F /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8415F38B285B080800BB1B5F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8415F38A285B080800BB1B5F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8415F38E285B081900BB1B5F /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8415F38D285B081900BB1B5F /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8415F364285B03F300BB1B5F /* Project object */;
+}
